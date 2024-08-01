@@ -1,62 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--judul web-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sajakku</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
+
 <body>
-    <nav>
+    <!--logo-->
+    <nav class="logo">
         <header>
             <div class="logo-icon"></div>
+            <b><i>sajakku</i></b>
         </header>
-        
+       
+        <!--navigasi-->
         <section class="nav-container">
-            <a class="nav-item">Sign In</a>
-            <a class="nav-item">Package</a>
-            <a class="nav-item">Call Us</a>
+            <a class="nav-item" href="#daftar">daftar</a>
+            <a class="nav-item" href="#sajak">sajak</a>
+            <a class="nav-item" href="#kontak">kontak</a>
         </section>
     </nav>
+
     <main>
         <article class="main-title">
             <header>
-            <h1>TRAVEL UMROH INDIANA</h1>
+            <h1><i>s e j e n a k  b e r s a j a k</i></h1>
             </header>
-
-           <p>umroh murah dengan pilihan paket beragam yang akan menghantarkan jamaah ke tanah suci mekah.</p>
+           <p>mari berkontribusi bersama kami dan sumbangkan sajak terindahmu.</p>
 
         </article>
 
+        <!--Gambar yang berkaitan dengan sajak, pakai autoslide-->
         <section class="main-content">
 
             <article class="main-content-item">
-                <div class="main-content-banner"></div>
+               <div>
+                    <div class="main-content-banner banner-1">
+                    </div>
+                    <div class="main-content-banner banner-2">
+                    </div>
+                    <div class="main-content-banner banner-3">
+                    </div>
+               </div>
 
                 <div class="main-item">
                     <div class="item-icon"></div>
-
                     <div>
-                        <h3>Rulita Dewi Indianti</h3>
-                        <p>Pendiri usaha travel umroh amanah.</p>
+                        <h3>/sa·jak/ </h3>
+                        <p><i>n</i> gubahan sastra yang berbentuk puisi</p>
                     </div>
                 </div>
             </article>
 
-            <form class="main-content-item">
+            <form class="main-content-item" id="daftar">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" autocomplete="name"><br>
 
-                <input type="text"     />
-                <button type="Button">submit</button>
-            
-                <!--kalau form pakai type submit kalau jacaszript pakai type button
-                kalau submit halaman ke refresh ulang-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email"><br>
 
+                <label for="phone">Telepon:</label>
+                <input type="text" id="phone" name="phone" autocomplete="tel"><br>
+
+                <button type="button" onclick="submitForm()">Daftar</button>
             </form>
-
-        </section>
+  
     </main>
+    
+    
+    <!--bagian isi, kumpulan sajak-->
+    <main class="content-sajak" id="sajak">
+        <section class="main-content">
+
+            <article class="main-content-item">
+              
+                <div class="main-item">
+                    <div>
+                        <p>Aku ini binatang jalang</p>
+                        <p>Dari kumpulannya terbuang</p>    
+                        <p>Biar peluru menembus kulitku</p>   
+                        <p>Aku tetap meradang menerjang</p>   
+                        <p>Luka dan bisa kubawa berlari</p>    
+                        <p>Berlari</p>  
+                        <p>Hingga hilang pedih peri</p>    
+                        <p>Dan aku akan lebih tidak perduli</p>      
+                        <p>Aku mau hidup seribu tahun lagi</p>    
+                        <p>Aku mau hidup seribu tahun lagi</p>  
+                          
+                    </div>
+                </div>
+            </article>
+
+            <article class="main-content-item">
+                <div class="main-item">
+                    <div>
+                        <p>Hidupnya tambah sepi, tambah hampa</p>
+                        <p> Malam apa lagi</p>
+                        <p> Ia memekik ngeri</p>
+                        <p> Dicekik kesunyian kamarnya</p>
+                        <p> Ia membenci. Dirinya dari segala</p>
+                        <p> Yang minta perempuan untuk kawannya</p>
+                        <p> Bahaya dari tiap sudut. Mendekat juga</p>
+                        <p> Dalam ketakutan-menanti ia menyebut satu nama</p>
+                        <p> Terkejut ia terduduk. Siapa memanggil itu?</p>
+                        <p> Ah! Lemah lesu ia tersedu: Ibu! Ibu!</p>
+                            
+                    </div>
+                </div>
+            </article>
+
+            <article class="main-content-item">
+              
+                <div class="main-item">
+                    <div>
+                        <p>Di teras rumah makan kami kini berhadapan</p>
+                        <p>Baru berkenalan. Cuma berpandangan</p>
+                        <p>Sungguhpun samudra jiwa sudah selam berselam</p>
+                        <p>Masih saja berpandangan</p>
+                        <p>Dalam lakon pertama</p>
+                        <p>Orkes meningkah dengan "Carmen" pula.</p>
+                        <p>Ia mengerling. Ia ketawa</p>
+                        <p>Dan rumput kering terus menyala</p>
+                        <p>Ia berkata. Suaranya nyaring tinggi</p>
+                        <p>Darahku terhenti berlari</p>     
+                        <p>Ketika orkes memulai "Ave Maria"</p>
+                        <p>Kuseret ia ke sana</p>  
+                            
+                    </div>
+                </div>
+            </article>
+
+           
+    </main>
+
+    <!--footer dan navigasi bagian bawah-->
+    <footer id="kontak">
+        <section class="footer-container">
+            <div class="footer-item">
+                <h4>Kontak Kami</h4>
+                <p>Email: info@sajakku.com</p>
+                <p>Telepon: +62 123 456 789</p>
+                <p>Alamat: Jl. Sajak No. 1, Jakarta</p>
+            </div>
+            <div class="footer-nav">
+                <a class="nav-item" href="#daftar">daftar</a>
+                <a class="nav-item" href="#sajak">sajak</a>
+                <a class="nav-item" href="#kontak">kontak</a>
+            </div>
+        </section>
+    </footer>
+
+
+    
+<script src="js\script.js"></script>
 </body>
 
 </html>
